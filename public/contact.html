@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SDM Polytechnic</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <style>
+    h1 {
+      line-height: 0.8;
+    }
+
+    a:hover {
+      background-color: brown;
+    }
+
+    legend {
+      background-color: aqua;
+      color: brown;
+      text-align: center;
+    }
+
+    .App {
+      text-align: center;
+    }
+
+    .App-logo {
+      height: 40vmin;
+      pointer-events: none;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+      }
+    }
+
+    .App-header {
+      background-color: #282c34;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: calc(10px + 2vmin);
+      color: white;
+    }
+
+    .App-link {
+      color: #61dafb;
+    }
+
+    @keyframes App-logo-spin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+
+    }
+
+    .my-page {
+      margin-left: 4rem;
+      margin-right: 4rem;
+    }
+
+    .logoimage {
+      height: 7rem;
+      width: 7rem;
+      border-radius: 5rem;
+      position: absolute;
+      top: 3rem;
+      left: 1rem;
+    }
+
+    .logoimage1 {
+      height: 7rem;
+      width: 7rem;
+      border-radius: 5rem;
+      position: absolute;
+      top: 3rem;
+      left: 80rem;
+    }
+
+    .sdmp {
+      display: inline-block;
+      margin-left: 20rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      color: indigo;
+      text-align: center;
+    }
+
+    .container-fluid {
+      margin-bottom: 2rem;
+      background-color: bisque;
+    }
+
+    #homelist {
+      padding-left: 1rem;
+    }
+
+    .myclass {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #images {
+      height: 25rem;
+    }
+
+    #spanbutton {
+      position: relative;
+      bottom: 5rem;
+    }
+
+    .carousel-inner {
+      height: 500px;
+      width: 100%;
+    }
+
+    #carouselExampleDark {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
+    #logonav {
+      margin-top: 20px;
+    }
+
+
+    .navullist {
+      text-align: right;
+      margin-left: 1%;
+      margin-right: 2%;
+    }
+
+
+
+
+    #toolnav {
+      display: inline-block;
+      position: absolute;
+      top: 20px;
+      left: 66.6%;
+
+    }
+
+    .firsttd {
+      height: 350px;
+      width: 450px;
+    }
+
+    .sdmimage {
+      height: 300px;
+      width: 400px;
+    }
+
+    .presedentname {
+      font-family: fantasy;
+      color: blue;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+
+
+    .collegeimg {
+      height: 300px;
+      width: 400px;
+    }
+
+    .secondtd {
+      padding-top: 100px;
+    }
+
+    .img-fluid {
+      height: 20rem;
+      width: 100%;
+    }
+
+    .imagecontact {
+      position: absolute;
+      top: 35rem;
+      left: 6rem;
+      color: blue;
+    }
+
+    .contact {
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+      color: blueviolet;
+
+    }
+
+    .contactTable {
+      padding-right: 1rem;
+      padding-top: 1rem;
+    }
+
+    .contactheader {
+      padding-top: 1rem;
+    }
+
+    .principalDetails {
+      text-align: center;
+      position: absolute;
+      top: auto;
+      left: 60rem;
+    }
+
+    .principalName {
+      text-align: center;
+      position: absolute;
+      top: 63rem;
+      left: 63rem;
+    }
+
+    .buttomContactdiv {
+      height: 3rem;
+      width: 100%;
+      background-color: #e6f783;
+    }
+  </style>
+</head>
+
+<body>
+  <div class='my-page'>
+    <div class='navdiv'>
+
+      <nav class="navbar navbar-expand-lg bg-light" id='logonav'><img src="sdmplogo1.png" class='logoimage'></img>
+        <div class='sdmp'>
+          <h1>Sri Dharmasthala Manjunatheshwara <br></br>Polytechnic Ujire</h1>
+        </div>
+        <img src="sdmplogo1.png" class='logoimage1'></img>
+      </nav>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <h2>SDMP</h2>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id='navullist'>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="App.js" id='homelist'>Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Department
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="computerscience.html">Computer Science and Enginnering</a></li>
+                  <li><a class="dropdown-item" href="electronicbranch.html">Electronic and Comunication Enginnering</a>
+                  </li>
+                  <li><a class="dropdown-item" href="civil.html">Civil Enginnering</a></li>
+                  <li><a class="dropdown-item" href="machanical.html">Machanical Enginnering</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Admission.html">Admissions
+                </a>
+              </li>
+
+
+              <li class="nav-item">
+                <a class="nav-link" href="libarry.html">Library</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="http://mynetlinx.in/Home.aspx">Results</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/">Placement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://app.sdmes.in/EERPV3.0/EAM/login.jsp?ConsID=SDMTI">Student Space</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://dtek.karnataka.gov.in/">Board Website</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Countact US</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+    <img src="sdmp.jpg" class="img-fluid" alt="...">
+    <h1 class="contact">Countact Us</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <table>
+            <tr>
+              <h3>SDM Polytechnic </h3>
+            </tr>
+            <tr>
+              <td class="contactTable">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                </svg>
+              </td>
+              <th class="contactheader">Ujire -574240</th>
+            </tr>
+            <tr>
+              <td class="contactTable"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="bi bi-pin-map-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z" />
+                  <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                </svg></td>
+              <th class="contactheader">
+                <a
+                  href="https://www.google.com/maps/place/Sri+Dharmasthala+Manjunatheshwara+Polytechnic/@12.991081,75.3399382,17z/data=!3m1!4b1!4m5!3m4!1s0x3ba4b62e5b0e2681:0x6e28d15e61e86e89!8m2!3d12.991081!4d75.3421269">
+                  sdm polytechnic location</a>
+              </th>
+            </tr>
+            <tr>
+              <td class="contactTable"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                </svg></td>
+              <th class="contactheader">08256-236600</th>
+            </tr>
+            <tr>
+              <td class="contactTable"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z" />
+                </svg></td>
+              <th class="contactheader">9845893731, <br>
+                9880724085, <br>
+                7624838196</th>
+            </tr>
+            <tr>
+              <td class="contactTable"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="bi bi-envelope-open-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.314l6.709 3.932L8 8.928l1.291.718L16 5.714V5.4a2 2 0 0 0-1.059-1.765l-6-3.2ZM16 6.873l-5.693 3.337L16 13.372v-6.5Zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516ZM0 13.373l5.693-3.163L0 6.873v6.5Z" />
+                </svg></td>
+              <th class="contactheader">principal@sdmpolytechnic.in <br>
+                office@sdmpolytechnic.in</th>
+            </tr>
+            <tr>
+              <td class="contactTable"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="bi bi-browser-chrome" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M16 8a8.001 8.001 0 0 1-7.022 7.94l1.902-7.098a2.995 2.995 0 0 0 .05-1.492A2.977 2.977 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8ZM0 8a8 8 0 0 0 7.927 8l1.426-5.321a2.978 2.978 0 0 1-.723.255 2.979 2.979 0 0 1-1.743-.147 2.986 2.986 0 0 1-1.043-.7L.633 4.876A7.975 7.975 0 0 0 0 8Zm5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a2.979 2.979 0 0 0-1.252.243 2.987 2.987 0 0 0-1.81 2.59ZM8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+                </svg></td>
+              <th class="contactheader"> www.sdmpolytehnic.in</th>
+            </tr>
+
+          </table>
+        </div>
+        <div class="col-sm-6">
+          <legend>PRINCIPAL OF SDM POLYTECHNIC</legend>
+          <table>
+            <tr>
+              <td class="principalDetails"><img
+                  src="data:image/jpeg;base64,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"
+                  alt=""></td>
+
+            </tr>
+            <tr>
+              <td class="principalName">
+                <h4>Mr. Santhosha</h4>
+              </td>
+
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="buttomContactdiv">
+
+  </div>
+
+
+  <script src="" async defer></script>
+</body>
+
+</html>
